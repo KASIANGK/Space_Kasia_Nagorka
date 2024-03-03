@@ -7,6 +7,7 @@ import './Carousel.css'
 
 function Carousel() {
   const [slide, setSlide] = useState(0)
+  const [isClicked, setIsClicked] = useState('')
   const slides = [
     { 
       name: 'Slide 1',
@@ -24,9 +25,12 @@ function Carousel() {
     },
   ]
 
-  // function pour maj le slide en fonction de l'index
+
+
+  // function pour maj le slide et style du bouton en fonction de l'index
   function handleChangeSlide(index) {
     setSlide(index)
+    setIsClicked(index)
   }
 
   return (
@@ -41,14 +45,14 @@ function Carousel() {
         </div>
         <div className="carousel-buttons">
           {slides.map((_, index) => ( // '_' convention pour indiquer une variable qui est presente mais non utilisee
-            <button key={index} onClick={() => handleChangeSlide(index)}>
+            <button key={index} onClick={() => handleChangeSlide(index)}
+            className={index === isClicked ? 'btn-clicked' : 'btn-not-clicked'}>
             </button>
           ))}
         </div>
       </div>
       <div className='carousel-img'>
         <div className="carousel-content">
-          {slides[slide].name}
           <img src={slides[slide].image}/>
         </div>
       </div>

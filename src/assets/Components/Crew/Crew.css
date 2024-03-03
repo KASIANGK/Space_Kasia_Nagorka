@@ -6,5 +6,13 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
-    background-image: url('../../../../../img/crew-bg.png');
+    /* background-image: url('../../../../../img/home-bg.png');
+    background-size: cover; */
+}
+.crew-og {
+    color: white;
+    width: 100vw;
+    gap: 5%;
+    background-image: url('../../../../../img/home-bg.png');
+    background-size: cover;
 }

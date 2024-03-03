@@ -1,3 +1,32 @@
 .carousel {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.carousel img {
+    width: 85%;
+}
+.carousel-txt {
+    width: 500px;
+}
+.carousel-content {
+    display: flex;
+
+}
+.btn-clicked {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 15px;
+    background-color: white;
+}
+.btn-not-clicked {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(0, 0, 0);
 }
