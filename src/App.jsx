@@ -30,7 +30,7 @@ function App() {
       element: <Crew></Crew> 
     },
     {
-      path: '/technology',
+      path: '/technology/:id',
       element: <Technology></Technology>
     },
     {
