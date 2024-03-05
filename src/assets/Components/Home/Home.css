@@ -1,4 +1,4 @@
-.home-og {
+/* .home-og {
     background-image: url('../../../../../img/home/background-home-desktop.jpg');
     color: white;
     height: 100vh;
@@ -20,19 +20,91 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
+    flex-wrap: wrap;
 }
 .home-txt {
-    width: 50%;
+    width: 400px;
 }
 .home-txt p {
-    width: 50%;
+    width: 200px;
 }
 .home-btn {
     background-color: white;
     border-radius: 50%;
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.home-og {
+    background-image: url('../../../../../img/home/background-home-desktop.jpg');
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-position: 55% 0%;
+    background-size: cover;
+}
+
+.home-content {
+    width: 100%;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    color: white;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.home-txt {
+    width: 100%; 
+    max-width: 400px; 
+    text-align: left; 
+}
+
+.home-txt p {
+    width: 100%; 
+}
+
+.home-btn {
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 425px) {
+    .home-txt {
+        text-align: center; 
+        padding-bottom: 10%;
+        
+    }
+}
+@media screen and (max-width: 1024px) {
+    .home {
+        color: white;
+        width: 90%; 
+        max-width: 1200px;
+        margin: 0 auto; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
 }

@@ -37,7 +37,6 @@ function Carousel() {
     <div className="carousel">
       <div className='carousel-txt'>
         <div className='carousel-content-txt'>
-          <h3>02 MEET YOUR CREW</h3>
           <h2>COMMANDER</h2>
           <h1>DOUGLAS HURLEY</h1>
           <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. 
@@ -52,6 +51,9 @@ function Carousel() {
         </div>
       </div>
       <div className='carousel-img'>
+        <div className='empty'>
+          
+        </div>
         <div className="carousel-content">
           <img src={slides[slide].image}/>
         </div>

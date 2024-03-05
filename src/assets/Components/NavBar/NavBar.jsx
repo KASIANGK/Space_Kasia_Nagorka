@@ -9,7 +9,7 @@ function NavBar() {
             <div className="navbar">
                 <div className="nav-left">
                     <img src={Logo}></img>
-                    <p>______________________________</p>
+                    <p>____________________________</p>
                 </div>
                 <div className="nav-right">
                     <ul className="nav-links">

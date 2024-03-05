@@ -4,17 +4,111 @@
     width: 100vw;
 }
 .technology-bg {
-    height: 100%;
+    height: auto;
     background-size: cover;
     background-image: url('../../../../../img/tech-bg.png');
+    background-position: 50% 50%;
 
 }
 .technology-content-btn {
     color: white;
     height: 100vh;
-    width: 100vw;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
+}
+.techno-content {
+    display: flex;
+    width: 100vw;
+    margin-top: -10%;
+    justify-content: flex-end;
+    gap: 5%;
+
+}
+.techno-content img {
+    height: auto;
+    width: 400px;
+}
+.techno-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.techno-content-txt {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.techno-content-txt p {
+    width: 450px;
+    height: auto;
+}
+.technology-txt {
+    display: flex;
+    width: 100%;
+}
+.technology-content-btn {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: 5%;
+}
+.techno-btn {
+    border: solid 3px white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+@media screen and (min-width: 1440px) {
+    .techno-content img {
+        width: 100%;
+        max-width: none; 
+    }
+    .techno-content-txt p {
+        width: 650px;
+        height: auto;
+    }
+    .techno-content-txt {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .techno-content {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .techno-content {
+        display: flex;
+        width: 100vw;
+        margin-top: -10%;
+        justify-content: flex-end;
+        gap: 5%;
+        flex-wrap: wrap;
+    
+    }
+    .technology-content-btn {
+        width: 90%;
+        max-width: none; 
+    }
+
+    .techno-content img {
+        width: 100%;
+        max-width: none; 
+    }
+
+    .techno-content-txt {
+        margin-right: 0; 
+        width: 100%; 
+        max-width: none;
+    }
 }

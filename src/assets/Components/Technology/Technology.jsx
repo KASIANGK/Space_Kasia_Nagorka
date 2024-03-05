@@ -40,7 +40,7 @@ function Technology () {
             <div className='technology-bg'
             style={{backgroundImage: 'url(' + backgroundImage + ')'}}>
                 <NavBar></NavBar>
-                <h1>03 SPACE LAUNCH 101</h1>
+                <h3>03 SPACE LAUNCH 101</h3>
                 <div className='techno-content'>
                     <div className='technology-txt'>
                         <div className='technology-content-btn'>

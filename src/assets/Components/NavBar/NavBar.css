@@ -7,10 +7,12 @@
     color: #fff;
     opacity: 25;
     padding-top: 15px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(5px); 
 }
 .nav-left {
   display: flex;
-  gap: 55px;
+  gap: 15%;
   align-items: center;
 }
 .nav-left img {
@@ -18,17 +20,17 @@
   height: 35px;
   padding-left: 7%;
 }
-  
 .nav-links {
   align-items: center;
   list-style: none;
   height: 70px;
+  width: auto;
   background: rgba(255, 255, 255, 0.064);
-  padding-inline-end: 145px;
-  padding-inline-start: 150px;
+  padding-inline-end: 140px;
+  padding-inline-start: 140px;
   display: flex; 
   justify-content: flex-end;
-  gap: 30px;
+  gap: 40px;
   font-size: 0.7em;
 }
 
@@ -36,4 +38,34 @@
     color: #fff;
     text-decoration: none;
 }
-  
+
+@media screen and (min-width: 1440px) {
+  .nav-links {
+    align-items: center;
+    list-style: none;
+    height: 70px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.064);
+    padding-inline-end: 170px;
+    padding-inline-start: 170px;
+    display: flex; 
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav-left {
+      flex-basis: 100%; 
+      justify-content: center; 
+  }
+
+  .nav-links {
+      flex-basis: 100%; 
+      justify-content: center; 
+      padding: 0; 
+      gap: 10px;
+      padding-inline-end: 45px;
+      padding-inline-start: 45px;
+  }
+}
